@@ -1,0 +1,89 @@
+<!-- <div class="homepage">
+  <section class="hero">
+    <div class="hero-left">
+      <h1>{{'homepage.hero.hero-title' | translate}}</h1>
+      <p>{{'homepage.hero.hero-text' | translate}}</p>
+      <a routerLink="/sign-up" *ngIf="!authService.isLoggedIn()">{{'homepage.hero.start' | translate}}</a>
+      <a routerLink="/main" *ngIf="authService.isLoggedIn()">{{'homepage.hero.start' | translate}}</a>
+    </div>
+    <div class="hero-right">
+      <img src="../../../../assets/images/hero.png" alt="hero image">
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="info-item">
+      <h3><i class="fa-solid fa-calendar-days"></i> {{'homepage.info.title-1' | translate}}</h3>
+      <p>{{'homepage.info.text-1' | translate}}</p>
+    </div>
+
+    <div class="info-item">
+      <h3><i class="fa-solid fa-people-group"></i> {{'homepage.info.title-2' | translate}}</h3>
+      <p>{{'homepage.info.text-2' | translate}}</p>
+    </div>
+
+    <div class="info-item">
+      <h3><i class="fa-solid fa-truck-fast"></i> {{'homepage.info.title-3' | translate}}</h3>
+      <p>{{'homepage.info.text-3' | translate}}</p>
+    </div>
+
+  </section>
+
+  <section class="why">
+    <div class="why-left">
+      <img src="../../../../assets/images/stats.png" alt="features image">
+    </div>
+    <div class="why-right">
+      <h3>{{'homepage.why.title' | translate}}</h3>
+      <p>{{'homepage.why.text' | translate}}
+      </p>
+    </div>
+  </section>
+
+  <section class="introduce">
+    <div class="author">
+      <h3 class="introduce-title">{{'homepage.introduce.author.title' | translate}}</h3>
+      <div class="author-card introduce-card">
+        <div class="author-img">
+          <img src="https://avatars.githubusercontent.com/u/91944272?v=4" class="profile-img" alt="profile picture">
+        </div>
+
+        <div class="author-info">
+          <h5>{{'homepage.introduce.author.name' | translate}}</h5>
+          <p>{{'homepage.introduce.author.text' | translate}}</p>
+          <div class="author-contacts">
+            <div>
+              <i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/khakimbek-erkinboev-343a75226/"
+                target="_blank"> LinkedIn</a>
+            </div>
+
+            <div>
+              <i class="fa-brands fa-github"></i> <a href="https://github.com/khakimbekerkinboev/" target="_blank">
+                GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="course">
+      <h3 class="introduce-title">{{'homepage.introduce.course.title' | translate}}</h3>
+      <div class="course-card introduce-card">
+        <div class="course-img">
+          <img src="../../../../assets/images/angular-logo.png" alt="course logo">
+        </div>
+        <h5>{{'homepage.introduce.course.card-title' | translate}}</h5>
+        <p>{{'homepage.introduce.course.text' | translate}} <a
+            href="https://rs.school/angular/">{{'homepage.introduce.course.link' | translate}}</a>.</p>
+        <a href="https://wearecommunity.io/events/angular-rss-2022q3"
+          class="enroll-btn">{{'homepage.introduce.course.enroll-btn' | translate}}</a>
+      </div>
+    </div>
+  </section>
+
+</div> -->
+<app-welcome></app-welcome>
+<app-project-info></app-project-info>
+<app-courses></app-courses>
+<app-about-me></app-about-me>

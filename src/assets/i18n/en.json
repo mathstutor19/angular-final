@@ -1,0 +1,153 @@
+{
+  "header": {
+    "logo": "PMS",
+    "nav": {
+      "home": "Home",
+      "boards": "Boards"
+    },
+    "lang": {
+      "en": "En",
+      "uz": "Uz"
+    },
+    "auth": {
+      "login": "Log in",
+      "signup": "Sign up",
+      "editprofile": "Edit profile",
+      "logout": "Log out"
+    }
+  },
+  "confirm-delete": {
+    "title": "Are you sure you want to delete this item?",
+    "cancel": "Cancel",
+    "delete": "Delete"
+  },
+  "homepage": {
+    "welcome": {
+      "title": "Project management software",
+      "strongtext": "PMS",
+      "text": "has the capacity to help plan, organize, and manage resource tools and develop resource estimates. Depending on the sophistication of the software, it can manage estimation and planning, scheduling, cost control and budget management, resource allocation, collaboration software, communication, decision-making"
+    },
+    "projectinfo": {
+      "title-1": "Task management",
+      "text-1": "When you are managing a project, it is essential to track all the individual tasks your team members must complete.",
+      "title-2": "Reporting",
+      "text-2": "Modern project management software has robust features that help you build reports and dashboards to display every project. ",
+      "title-3": "Time tracking",
+      "text-3": "Automated time tracking is a vital feature of project management software, especially if you want accurate invoicing for your clients."
+    },
+    "courses": {
+      "suptitle": "Rschool is the best free education in the world. ",
+      "subtitle": "Our best courses.",
+      "title-1": "Angular",
+      "text-1": "AngularJS extends HTML with new attributes. AngularJS is perfect for Single Page Applications (SPAs). This tutorial will teach you JavaScript from basic to advanced. ",
+      "starttime-1": "The course will start on March 13.",
+      "title-2": "Javascript",
+      "text-2": "JavaScript is the world's most popular programming language. JavaScript is the programming language of the Web. This tutorial will teach you JavaScript from basic to advanced. ",
+      "starttime-2": "The course will start on June 5",
+      "title-3": "Nodejs",
+      "text-3": "Node.js is an open source server environment. Node.js allows you to run JavaScript on the server. This tutorial will teach you JavaScript from basic to advanced.",
+      "starttime-3": "The course will start on March 14.",
+      "title-4": "Fullstack",
+      "text-4": "A full stack web developer is a person who can develop both client and server software.This tutorial will teach you JavaScript from basic to advanced.",
+      "starttime-4": "The course will start on Septem 20"
+    },
+    "aboutme": {
+      "title": "I am Bekmirzayev Elmurod.",
+      "text": "Nowaday, I am learning Angular in Rschool. In my opinion , Rschool is best school in the word. I learnt Html, Css , Javascript, Angular from rschool . I created a lot website such as Asygn race,Online zoo,Project application during the course."
+    }
+  },
+  "main": {
+    "main-title": "Boards",
+    "search-task": {
+      "title": "Title",
+      "description": "Description",
+      "path": "Path",
+      "view": "View",
+      "no-result": "No result"
+    },
+    "open-board-btn": "Open",
+    "add-board-btn": "Add board",
+    "create": {
+      "title": "Add board",
+      "input-1": "Title",
+      "input-2": "Description",
+      "btn": "Save"
+    },
+    "update": {
+      "title": "Edit board",
+      "input-1": "Title",
+      "input-2": "Description",
+      "btn": "Save"
+    }
+  },
+  "board": {
+    "exit-btn": "Boards",
+    "column-title-edit-btns": {
+      "cancel": "Cancel",
+      "submit": "Submit"
+    },
+    "add-column-btn": "Add column",
+    "column-create": {
+      "title": "Add column",
+      "input": "Title",
+      "btn": "Save"
+    },
+    "task-create": {
+      "title": "Add task",
+      "input-1": "Title",
+      "input-2": "Description",
+      "btn": "Save"
+    },
+    "task-update": {
+      "title": "Edit task",
+      "input-1": "Title",
+      "input-2": "Description",
+      "btn": "Save"
+    }
+  },
+  "login": {
+    "title": "Log in",
+    "invalid": "Invalid login and/or password.",
+    "login": "Login",
+    "login-req": "Login is required.",
+    "login-min": "Login should be minimum 3 characters.",
+    "password": "Password",
+    "password-req": "Password is required.",
+    "password-min": "Password should be minimum 3 characters.",
+    "login-btn": "Login",
+    "account": "Don't have an account?",
+    "signup-link": "Sign up"
+  },
+  "signup": {
+    "title": "Sign up",
+    "error": "An error occured, please try again later.",
+    "name": "Name",
+    "name-req": "Name is required.",
+    "name-min": "Name should be minimum 3 characters.",
+    "login": "Login",
+    "login-req": "Login is required.",
+    "login-min": "Login should be minimum 3 characters.",
+    "password": "Password",
+    "password-req": "Password is required.",
+    "password-min": "Password should be minimum 3 characters.",
+    "signup-btn": "Sign up",
+    "account": "Already have an account?",
+    "login-link": "Log in"
+  },
+  "edit-profile": {
+    "title": "Edit profile",
+    "error": "An error occured, please try again later.",
+    "name": "Name",
+    "name-req": "Name is required.",
+    "name-min": "Name should be minimum 3 characters.",
+    "login": "Login",
+    "login-req": "Login is required.",
+    "login-min": "Login should be minimum 3 characters.",
+    "password": "Password",
+    "password-req": "Password is required.",
+    "password-min": "Password should be minimum 3 characters.",
+    "save-btn": "Save",
+    "delete-btn": "Delete",
+    "account": "your account?"
+  }
+}

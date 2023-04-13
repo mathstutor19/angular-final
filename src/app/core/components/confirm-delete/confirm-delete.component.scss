@@ -1,0 +1,40 @@
+.delete-modal {
+  background-color: white;
+  width: 22.5rem;
+  border: 1px solid #c0c0c0;
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.delete-modal h6 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.delete-btns {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.5rem;
+}
+
+.delete-btns button {
+  border: none;
+  color: white;
+  padding: 0.3rem 2rem;
+  border-radius: 0.3rem;
+}
+
+.cancel-btn {
+  background-color: gray;
+}
+
+.delete-btn {
+  background-color: #ff0000;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .delete-modal {
+    width: 18rem;
+    padding: 1rem;
+  }
+}

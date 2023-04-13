@@ -1,0 +1,129 @@
+<div class="board-page">
+  <div class="board-top">
+    <a routerLink="/main" class="back-btn"><i class="fa-solid fa-chevron-left"></i>
+      <p>{{'board.exit-btn' | translate}}</p>
+    </a>
+    <h5 class="board-title"></h5>
+    <div class="user-selector-container">
+      <i class="fa-solid fa-filter"></i>
+      <select class="user-selector" (change)="filterUserTasks($event)">
+        <option selected>All</option>
+        <option [value]="user.id" *ngFor="let user of users">{{user.name}}</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="columns" cdkDropList cdkDropListOrientation="horizontal" (cdkDropListDropped)="dropColumn($event)"
+    cdkDropListGroup>
+    <div class="column-wrapper" *ngFor="let column of columns">
+      <div class="column" cdkDrag>
+        <div class="column-title-container">
+          <button class="column-title" (click)="showColumnTitleEdit(column)">{{column.title}}</button>
+          <div class="column-title-edit column-title-edit-hidden">
+            <input type="text" #titleInput maxlength="15">
+            <div class="column-title-edit-btns">
+              <button (click)="showColumnTitle(column)">{{'board.column-title-edit-btns.cancel' |
+                translate}}</button><button
+                (click)="updateColumnTitle(column, titleInput.value)">{{'board.column-title-edit-btns.submit' |
+                translate}}</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tasks" cdkDropList [cdkDropListData]="allTasks[columns.indexOf(column)]"
+          (cdkDropListDropped)="dropTask($event, column)">
+          <div class="task" [style.background-color]="task.color" *ngFor="let task of allTasks[columns.indexOf(column)]"
+            (click)="showTaskEditWindow($event, column, task )" cdkDrag
+            (cdkDragStarted)="setTaskDraggedItem(task, column)">
+            <h6>{{task.title}}</h6>
+            <p>{{task.description}}</p>
+            <button (click)="showTaskDelete(column, task)"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+        </div>
+
+        <div class="column-bottom">
+          <button class="add-task-btn" (click)="showTaskCreateWindow(column)"><i class="fa-solid fa-plus"></i></button>
+          <button class="delete-column-btn" (click)="showColumnDelete(column)"><i
+              class="fa-solid fa-trash-can"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <button class="create-column-btn" (click)="toggleColumnCreateWindow()">
+      {{'board.add-column-btn' | translate}}
+    </button>
+  </div>
+
+  <div class="column-create column-create-hidden" (click)="hideColumnCreate($event)">
+    <form action="" #addColumnForm="ngForm" (ngSubmit)="createColumn(addColumnForm.value)">
+      <h3>{{'board.column-create.title' | translate}}</h3>
+
+      <div class="input-container">
+        <label for="title" class="form-label">{{'board.column-create.input' | translate}}</label>
+        <input required maxlength="14" type="text" id="title" name="title" ngModel>
+      </div>
+
+      <button type="submit" class="submit-btn" [disabled]="!addColumnForm.valid">{{'board.column-create.btn' |
+        translate}}</button>
+
+      <div class="exit-btn">
+        <i class="fa-regular fa-circle-xmark"></i>
+      </div>
+    </form>
+
+  </div>
+
+  <div class="column-delete column-delete-hidden" (click)="hideColumnDelete($event)">
+    <app-confirm-delete></app-confirm-delete>
+  </div>
+
+  <div class="task-create task-create-hidden" (click)="hideTaskCreate($event)">
+    <form action="" #addTaskForm="ngForm" (ngSubmit)="createTask(addTaskForm.value)">
+      <h2>{{'board.task-create.title' | translate}}</h2>
+
+      <div class="input-container">
+        <label for="title" class="form-label">{{'board.task-create.input-1' | translate}}</label>
+        <input required maxlength="14" type="text" id="title" name="title" ngModel>
+      </div>
+
+      <div class="input-container">
+        <label for="description" class="form-label">{{'board.task-create.input-2' | translate}}</label>
+        <textarea required maxlength="50" type="text" id="description" name="description" ngModel></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn" [disabled]="!addTaskForm.valid">{{'board.task-create.btn' |
+        translate}}</button>
+
+      <div class="exit-btn">
+        <i class="fa-regular fa-circle-xmark"></i>
+      </div>
+    </form>
+  </div>
+
+  <div class="task-delete task-delete-hidden" (click)="hideTaskDelete($event)">
+    <app-confirm-delete></app-confirm-delete>
+  </div>
+
+  <div class="task-update task-update-hidden" (click)="hideTaskUpdate($event)">
+    <form action="" #updateTaskForm="ngForm" (ngSubmit)="updateTask(updateTaskForm.value)">
+      <h2>{{'board.task-update.title' | translate}}</h2>
+
+      <div class="input-container">
+        <label for="title" class="form-label">{{'board.task-update.input-1' | translate}}</label>
+        <input required maxlength="14" type="text" id="title" name="title" ngModel>
+      </div>
+
+      <div class="input-container">
+        <label for="description" class="form-label">{{'board.task-update.input-2' | translate}}</label>
+        <textarea required maxlength="50" type="text" id="description" name="description" ngModel></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn" [disabled]="!updateTaskForm.valid">{{'board.task-update.btn' |
+        translate}}</button>
+
+      <div class="exit-btn">
+        <i class="fa-regular fa-circle-xmark"></i>
+      </div>
+    </form>
+  </div>
+</div>

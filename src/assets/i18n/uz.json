@@ -1,0 +1,153 @@
+{
+  "header": {
+    "logo": "LBT",
+    "nav": {
+      "home": "Asosiy",
+      "boards": "Doskalar"
+    },
+    "lang": {
+      "en": "Ing",
+      "uz": "O'z"
+    },
+    "auth": {
+      "login": "Kirish",
+      "signup": "Ro'yhatdan o'tish",
+      "editprofile": "Profilni tahrirlash",
+      "logout": "Chiqish"
+    }
+  },
+  "confirm-delete": {
+    "title": "Haqiqatan ham bu elementni oʻchmoqchimisiz?",
+    "cancel": "Bekor qilish",
+    "delete": "O'chirish"
+  },
+  "homepage": {
+    "welcome": {
+      "title": "Loyihani Boshqarish Dasturi",
+      "strongtext": "LBD",
+      "text": "resurs vositalarini rejalashtirish, tartibga solish va boshqarish hamda resurslar hisobini ishlab chiqishda yordam berish imkoniyatiga ega. Dasturiy ta'minotning murakkabligiga qarab, u baholash va rejalashtirish, rejalashtirish, xarajatlarni nazorat qilish va byudjetni boshqarish, resurslarni taqsimlash, hamkorlik dasturiy ta'minoti, aloqa, qarorlar qabul qilishni boshqarishi mumkin."
+    },
+    "projectinfo": {
+      "title-1": "Vazifalarni boshqarish",
+      "text-1": "Loyihani boshqarayotganda, jamoa a'zolari bajarishi kerak bo'lgan barcha individual vazifalarni kuzatish juda muhimdir.",
+      "title-2": "Hisobot",
+      "text-2": "Zamonaviy loyihalarni boshqarish dasturi har bir loyihani ko'rsatish uchun hisobotlar va asboblar panelini yaratishga yordam beradigan mustahkam xususiyatlarga ega. ",
+      "title-3": "Vaqtni kuzatish",
+      "text-3": "Avtomatlashtirilgan vaqtni kuzatish loyihani boshqarish dasturining muhim xususiyatidir, ayniqsa mijozlaringiz uchun to'g'ri hisob-fakturani olishni istasangiz."
+    },
+    "courses": {
+      "suptitle": "Rschool - dunyodagi eng yaxshi bepul ta'lim.",
+      "subtitle": "Bizning eng yaxshi kurslarimiz",
+      "title-1": "Angular",
+      "text-1": "AngularJS HTMLni yangi atributlar bilan kengaytiradi. AngularJS yagona sahifali ilovalar (SPA) uchun juda mos keladi. Ushbu qo'llanma sizga JavaScript-ni asosiydan yuqori darajaga qadar o'rgatadi.",
+      "starttime-1": "Kurs 13-martdan boshlanadi.",
+      "title-2": "Javascript",
+      "text-2": "JavaScript dunyodagi eng mashhur dasturlash tilidir. JavaScript Internetning dasturlash tilidir. Ushbu qo'llanma sizga JavaScript-ni asosiydan yuqori darajaga qadar o'rgatadi. ",
+      "starttime-2": " Kurs 5-iyun kuni boshlanadi",
+      "title-3": "Nodejs",
+      "text-3": "Node.js ochiq manbali server muhitidir. Node.js serverda JavaScript-ni ishga tushirish imkonini beradi. Ushbu qo'llanma sizga JavaScript-ni asosiydan yuqori darajaga qadar o'rgatadi.",
+      "starttime-3": "Kurs 14-martdan boshlanadi.",
+      "title-4": "Fullstack",
+      "text-4": "Fullstack veb-ishlab chiquvchisi ham mijoz, ham server dasturlarini ishlab chiqishi mumkin bo'lgan shaxsdir. Ushbu qo'llanma sizga JavaScript-ni asosiydan yuqori darajaga qadar o'rgatadi.",
+      "starttime-4": "Kurs 20-sentyabrdan boshlanadi"
+    },
+    "aboutme": {
+      "title": "Men Bekmirzayev Elmurod.",
+      "text": "Hozir men Rschoolda Angular tilini o'rganyapman. Menimcha, Rschool so'zdagi eng yaxshi maktab. Html, Css, Javascript, Angular tillarini rschool dan o'rgandim. Kurs davomida Asygn moshina, Onlayn hayvonot bog'i, Loyiha ilovasi kabi ko'plab veb-saytlarni yaratdim."
+    }
+  },
+  "main": {
+    "main-title": "Doskalar",
+    "search-task": {
+      "title": "Sarlavha",
+      "description": "Tavsif",
+      "path": "Manzil",
+      "view": "Ko'rish",
+      "no-result": "Topilmadi"
+    },
+    "open-board-btn": "Ochish",
+    "add-board-btn": "Doska qo'shish",
+    "create": {
+      "title": "Doska qo'shish",
+      "input-1": "Sarlavha",
+      "input-2": "Tavsif",
+      "btn": "Saqlash"
+    },
+    "update": {
+      "title": "Doskani tahrirlash",
+      "input-1": "Sarlavha",
+      "input-2": "Tavsif",
+      "btn": "Saqlash"
+    }
+  },
+  "board": {
+    "exit-btn": "Doskalar",
+    "column-title-edit-btns": {
+      "cancel": "Bekor qilish",
+      "submit": "Saqlash"
+    },
+    "add-column-btn": "Qator qo'shish",
+    "column-create": {
+      "title": "Qator qo'shish",
+      "input": "Sarlavha",
+      "btn": "Saqlash"
+    },
+    "task-create": {
+      "title": "Vazifa qo'shish",
+      "input-1": "Sarlavha",
+      "input-2": "Tavsif",
+      "btn": "Saqlash"
+    },
+    "task-update": {
+      "title": "Vazifani tahrirlash",
+      "input-1": "Sarlavha",
+      "input-2": "Tavsif",
+      "btn": "Saqlash"
+    }
+  },
+  "login": {
+    "title": "Kirish",
+    "invalid": "Noto'g'ri login va/yoki parol.",
+    "login": "Login",
+    "login-req": "Login majburiy.",
+    "login-min": "Login kamida 3 ta belgidan iborat bo'lishi kerak.",
+    "password": "Parol",
+    "password-req": "Parol majburiy.",
+    "password-min": "Parol kamida 3 ta belgidan iborat bo'lishi kerak.",
+    "login-btn": "Kirish",
+    "account": "Akkountingiz yo'qmi?",
+    "signup-link": "Ro'yhatdan o'tish"
+  },
+  "signup": {
+    "title": "Ro'yhatdan o'tish",
+    "error": "Xatolik yuz berdi, keyinroq qayta urinib ko‘ring.",
+    "name": "Ism",
+    "name-req": "Ism majburiy.",
+    "name-min": "Ism kamida 3 ta belgidan iborat bo'lishi kerak.",
+    "login": "Login",
+    "login-req": "Login majburiy.",
+    "login-min": "Login kamida 3 ta belgidan iborat bo'lishi kerak.",
+    "password": "Parol",
+    "password-req": "Parol majburiy.",
+    "password-min": "Parol kamida 3 ta belgidan iborat bo'lishi kerak.",
+    "signup-btn": "Ro'yhatdan o'tish",
+    "account": "Akkountingiz bormi?",
+    "login-link": "Kirish"
+  },
+  "edit-profile": {
+    "title": "Profilni tahrirlash",
+    "error": "Xatolik yuz berdi, keyinroq qayta urinib ko‘ring.",
+    "name": "Ism",
+    "name-req": "Ism majburiy.",
+    "name-min": "Ism kamida 3 ta belgidan iborat bo'lishi kerak.",
+    "login": "Login",
+    "login-req": "Login majburiy.",
+    "login-min": "Login kamida 3 ta belgidan iborat bo'lishi kerak.",
+    "password": "Parol",
+    "password-req": "Parol majburiy.",
+    "password-min": "Parol kamida 3 ta belgidan iborat bo'lishi kerak.",
+    "save-btn": "Saqlash",
+    "delete-btn": "O'chirish",
+    "account": "akkountingizni?"
+  }
+}

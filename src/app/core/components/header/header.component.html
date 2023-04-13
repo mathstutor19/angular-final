@@ -1,0 +1,74 @@
+<div class="header">
+  <div class="header-wrapper">
+    <div class="header-left">
+      <a routerLink="" class="logo">
+        <span>{{ "header.logo" | translate }}</span>
+      </a>
+      <ul *ngIf="authService.isLoggedIn()" class="nav-items">
+        <li
+          class="nav-item"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <a routerLink="/">{{ "header.nav.home" | translate }}</a>
+        </li>
+        <li
+          class="nav-item"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <a routerLink="/main">{{ "header.nav.boards" | translate }}</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="header-right">
+      <select
+        name="lang"
+        id="lang"
+        class="lang-selector"
+        (change)="changeLang($event)"
+      >
+        <option value="en" [selected]="lang == 'en'">
+          {{ "header.lang.en" | translate }}
+        </option>
+        <option value="uz" [selected]="lang == 'uz'">
+          {{ "header.lang.uz" | translate }}
+        </option>
+      </select>
+
+      <a
+        *ngIf="!authService.isLoggedIn()"
+        routerLink="/login"
+        class="login-btn"
+        >{{ "header.auth.login" | translate }}</a
+      >
+      <a
+        *ngIf="!authService.isLoggedIn()"
+        routerLink="/sign-up"
+        class="signup-btn"
+        >{{ "header.auth.signup" | translate }}</a
+      >
+
+      <div class="user-profile" *ngIf="authService.isLoggedIn()">
+        <a (click)="toggleProfile()" class="account-btn account-inactive"></a>
+      </div>
+
+      <div class="profile-container profile-hidden">
+        <div>
+          <a routerLink="/edit-profile" (click)="closeProfile()">{{
+            "header.auth.editprofile" | translate
+          }}</a>
+        </div>
+        <div>
+          <a
+            routerLink="/"
+            (click)="authService.logout()"
+            (click)="closeProfile()"
+            >{{ "header.auth.logout" | translate }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
